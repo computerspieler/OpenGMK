@@ -19,3 +19,11 @@ getopts = "0.2.21"
 gm8exe = { path = "../gm8exe" }
 gml-parser = { path = "../gml-parser" }
 rayon = "1.2"
+
+[lib]
+name = "gm8decompiler"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gm8decompiler"
+path = "src/main.rs"
