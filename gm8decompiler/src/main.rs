@@ -4,12 +4,7 @@ use std::{
     path::{Path, PathBuf},
     process,
 };
-
-pub mod collision;
-pub mod deobfuscate;
-pub mod gmk;
-pub mod mappings;
-pub mod zlib;
+use gm8decompiler::{deobfuscate, gmk};
 
 static INFO_STRING: &str = concat!(
     "GM8Decompiler v",
