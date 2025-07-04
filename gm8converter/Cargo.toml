@@ -1,0 +1,15 @@
+[package]
+name = "gm8converter"
+authors = ["The OpenGMK Project Developers"]
+license = "GPL-2.0-only"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.77"
+
+[dependencies]
+bmp = "0.5.0"
+utf8-chars = "3.0.5"
+gm8exe = { path = "../gm8exe" }
+gml-parser = { path = "../gml-parser" }
+gm8decompiler = { path = "../gm8decompiler" }
+getopts = "0.2.21"
