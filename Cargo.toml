@@ -6,6 +6,7 @@ members = [
     "gm8decompiler",
     "gml-parser",
     "gm8exe",
+    "gm8converter"
 ]
 
 [profile.release]
