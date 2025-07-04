@@ -33,6 +33,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0453232ace82dee0dd0b4c87a59bd90f7b53b314f3e0f61fe2ee7c8a16482289"
 
 [[package]]
+name = "arrayvec"
+version = "0.7.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7c02d123df017efcdfbd739ef81735b36c5ba83ec3c59c80a9d7ecc718f92e50"
+
+[[package]]
 name = "autocfg"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -58,6 +64,15 @@ name = "bitflags"
 version = "2.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
+
+[[package]]
+name = "bmp"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "69985ff4f58085ac696454692d0b646a66ad1f9cc9be294c91dc51bb5df511ae"
+dependencies = [
+ "byteorder",
+]
 
 [[package]]
 name = "bytemuck"
@@ -243,6 +258,18 @@ name = "glob"
 version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d2fabcfbdc87f4758337ca535fb41a6d701b65693ce38287d856d1674551ec9b"
+
+[[package]]
+name = "gm8converter"
+version = "0.1.0"
+dependencies = [
+ "bmp",
+ "getopts",
+ "gm8decompiler",
+ "gm8exe",
+ "gml-parser",
+ "utf8-chars",
+]
 
 [[package]]
 name = "gm8decompiler"
@@ -436,7 +463,7 @@ dependencies = [
 [[package]]
 name = "libsoundio-sys"
 version = "0.3.0"
-source = "git+https://github.com/Adamcake/udon#179830a6a143dd4e70b0613f688f1b3b2de78cc1"
+source = "git+https://github.com/Fancy2209/udon?branch=patch-1#4fd10e1f7640101edc97016c4bad26385c1d8b42"
 dependencies = [
  "cc",
  "cmake",
@@ -934,7 +961,7 @@ dependencies = [
 [[package]]
 name = "udon"
 version = "0.0.1"
-source = "git+https://github.com/Adamcake/udon#179830a6a143dd4e70b0613f688f1b3b2de78cc1"
+source = "git+https://github.com/Fancy2209/udon?branch=patch-1#4fd10e1f7640101edc97016c4bad26385c1d8b42"
 dependencies = [
  "libsoundio-sys",
  "serde",
@@ -951,6 +978,15 @@ name = "unicode-width"
 version = "0.1.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7dd6e30e90baa6f72411720665d41d89b9a3d039dc45b8faea1ddd07f617f6af"
+
+[[package]]
+name = "utf8-chars"
+version = "3.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f598f797138b219a4560b4e9c53c255e872e267c9e3fdcc75aa59a2a90953bcd"
+dependencies = [
+ "arrayvec",
+]
 
 [[package]]
 name = "vcpkg"
